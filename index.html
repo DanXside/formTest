@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Обратная связь</title>
+</head>
+<body>
+    
+<div class="container">
+    <form action="#" id="form" class="form">
+        <h1 class="form__title">Обратная связь</h1>
+        <div class="form__inputs">
+            <div class="form__input">
+                <input id="formName" type="text" class="form__input-general _req _name" name="name">
+                <label for="formName" class="form__label-input">Имя</label>
+                <label id="name" for="formName" class="form__name-label _err">Введите своё имя</label>
+            </div>
+            <div class="form__input">
+                <input id="formPhone" type="text" class="form__input-general _req _phone" name="phone">
+                <label for="formPhone" class="form__label-input">Телефон</label>
+                <label id="phone" for="formPhone" class="form__phone-label _err">Введите свой номер телефона</label>
+            </div>
+        </div>
+        <div class="form__input">
+            <input id="formEmail" type="text" class="form__input-general _req _email" name="email">
+            <label for="formEmail" class="form__label-input">Эл. почта</label>
+            <label id="email" for="formEmail" class="form__email-label _err">Проверьте введённый email</label>
+        </div>
+        <div class="form__textarea-wrap">
+            <textarea id="formText" name="text" class="form__textarea _req _text"></textarea>
+            <label for="formText" class="form__textarea-label">Сообщение</label>
+            <label id="text" for="formText" class="form__text-label _err">Введите сообщение</label>
+        </div>    
+        <div class="form__checkbox">
+            <input id="formCheck" type="checkbox" class="form__input-checkbox _req">
+            <label for="formCheck" class="form__checkbox-label">Отправляя форму вы соглашаетесь с <span class="form__checkbox_link"><a href="#">пользовательским соглашением</a></span> и <span class="form__checkbox_link"><a href="#"> политикой конфиденциальности</a></span></label>
+        </div>
+        <button type="submit" id="submit" class="form__submit">Отправить</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
